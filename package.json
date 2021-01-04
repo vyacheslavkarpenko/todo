@@ -5,7 +5,8 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "dev": "node ./src/app.js"
+    "dev": "node ./src/app.js",
+    "test": "NODE_ENV=test babel-node ./src/__test__/setup && jest ./src --verbose --colors --runInBand --detectOpenHandles  --forceExit",
   },
   "jest": {
     "verbose": true
